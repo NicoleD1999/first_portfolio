@@ -1,3 +1,48 @@
-h1 {
-    color: red;
+body {
+    background-color: #DCC9B6;
+}
+li {
+    display: inline;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: larger;
+}
+.nav-bar {
+    text-align: right;
+    background-image: linear-gradient(#6D4C3D, #A39171);
+    padding: 5px;
+    margin: -1%;
+}
+.container {
+    position: relative;
+}
+.text-block {
+
+}
+#pumpkin-king {
+    position: relative;
+    left: 300px;
+    width: 610px;
+    height: 400px;
+}
+#dancing-pumpkins{
+    position: relative;
+    left: 300px;
+    bottom: 88px;
+    width: 300px;
+    height: 200px;
+}
+#woodsman {
+    position: relative;
+    bottom: 798px;
+    left: 920px;
+    width: 400px;
+    height: 610px;
+}
+#carving-pumpkin{
+    position: relative;
+    left: 611px;
+    bottom: 1097px;
+    width: 300px;
+    height: 200px;
 }
