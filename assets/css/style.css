@@ -18,18 +18,7 @@ li {
     margin: -1%;
     border-bottom: solid 5px #6D4C3D;
 }
-#king-container {
-    position: absolute;
-}
-#dancing-container {
-    position: absolute;
-}
-#woodsman-container {
-    position: absolute;
-}
-#carving-container {
-    position: absolute;
-}
+
 .text-block {
 
 }
@@ -38,38 +27,43 @@ li {
 }
 #about-me-text {
     font-size: 30px;
-    position: relative;
-    left: 75px;
-    bottom: 200px;
+    padding-left: 250px;
+    padding-right: 500px;
 }
 #profile-picture {
+    float: right;
     border-radius: 50%;
-    width: 200px;
-    position: relative;
-    left: 1000px;
-    top: 68px;
+    width: 250px;
+    margin-right: 200px;
 }
-#pumpkin-king {
-    position: relative;
+.container {
+}
+.images {
+    border: solid 5px #6D4C3D;
+    background-color: #6D4C3D;
+}
+
+/*#pumpkin-king {
+    position: absolute;
     left: 295px;
-    bottom: 2px;
+    bottom: 121px;
     width: 610px;
     height: 395px;
     border: solid 5px #6D4C3D;
     background-color: #6d4C3D;
 }
 #dancing-pumpkins{
-    position: relative;
+    position: absolute;
     left: 605px;
-    top: 398px;
+    top: 1135px;
     width: 300px;
     height: 200px;
     border: solid 5px #6D4C3D;
     background-color: #6d4C3D;
 }
 #woodsman {
-    position: relative;
-    bottom: 816px;
+    position: absolute;
+    bottom: -608px;
     left: 911px;
     width: 400px;
     height: 600px;
@@ -78,9 +72,9 @@ li {
     background-color: #6d4c3d;
 }
 #carving-pumpkin{
-    position: relative;
-    left: 295px;
-    top: 398px;
+    position: absolute;
+    left: 303px;
+    top: 1135px;
     width: 303px;
     height: 200px;
     border: 5px solid rgb(109, 76, 61);
@@ -88,8 +82,8 @@ li {
 }
 #king-text{
     position: absolute;
-    left: 
-    bottom:
+    left: 300px;
+    bottom: 10px;
     color: #DCC9B6;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(0, 0, 0, 0.637);
@@ -98,6 +92,8 @@ li {
 }
 #dancing-block {
     position: absolute;
+    left: 200px;
+    top: 1px;
     color: #DCC9B6;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(0, 0, 0, 0.637);
