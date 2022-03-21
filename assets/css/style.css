@@ -25,10 +25,16 @@ li {
 .side-text {
     font-size: xx-large;
 }
+.bottom-text {
+    display: inline-block;
+    text-align: center;
+    margin-left: 400px;
+}
 #about-me-text {
     font-size: 30px;
-    padding-left: 250px;
-    padding-right: 500px;
+    padding-left: 30px;
+    border-left: solid 5px #6D4C3D;
+    margin-left: 160px;
 }
 #profile-picture {
     float: right;
@@ -37,10 +43,21 @@ li {
     margin-right: 200px;
 }
 .container {
+    display: flex;
+    flex-direction: row;
 }
 .images {
+    position: relative;
     border: solid 5px #6D4C3D;
     background-color: #6D4C3D;
+}
+
+#woodsman-block{
+    position: absolute;
+    width: 350px;
+    height: 600px;
+    bottom: -450px;
+    left: 1030px;  
 }
 
 /*#pumpkin-king {
