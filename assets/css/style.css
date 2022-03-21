@@ -1,7 +1,15 @@
+:root{
+    --stategreen:#023B28;
+    --huntergreen: #406450;
+    --ferngreen: #527B51;
+    --palespringlight: #D0D1AC;
+    --palespringdark: #DDE0BD;
+}
 body {
-    background-color: #DCC9B6;
+    background-image:linear-gradient(var(--palespringlight), var(--palespringdark));
 }
 li {
+    text-decoration: underline;
     display: inline;
     padding-left: 8px;
     padding-right: 8px;
@@ -12,15 +20,25 @@ li {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: larger;
-    background-image: linear-gradient(#6D4C3D, #A39171);
+    background-color: var(--stategreen);
     padding: 5px;
     padding-right: 15px;
     margin: -1%;
-    border-bottom: solid 5px #6D4C3D;
+    border-bottom: solid 5px var(--ferngreen);
 }
-
+ nav a{
+    color:var(--palespringdark);
+}
+ h3 a {
+     color: var(--ferngreen)
+ }
 .text-block {
 
+}
+.descript-text {
+    font-size: xx-large;
+    color: var(--stategreen);  
+    font-family: Arial, Helvetica, sans-serif;
 }
 .side-text {
     font-size: xx-large;
@@ -32,8 +50,10 @@ li {
 }
 #about-me-text {
     font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--huntergreen);
     padding-left: 30px;
-    border-left: solid 5px #6D4C3D;
+    border-left: solid 5px var(--huntergreen);
     margin-left: 160px;
 }
 #profile-picture {
@@ -42,94 +62,48 @@ li {
     width: 250px;
     margin-right: 200px;
 }
-.container {
+#image {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
+
 .images {
     position: relative;
-    border: solid 5px #6D4C3D;
-    background-color: #6D4C3D;
+    border: solid 5px var(--huntergreen);
+    background-color: var(--huntergreen);
 }
 
 #woodsman-block{
-    position: absolute;
+    position: relative;
+    top: 80px;
+    right: 200px;
     width: 350px;
     height: 600px;
-    bottom: -450px;
-    left: 1030px;  
+
+}
+#king-block {
+    position: relative;
+    left: 115px;
+    top: 80px;
+    width: 600px;
+    height: 350px;
 }
 
-/*#pumpkin-king {
-    position: absolute;
-    left: 295px;
-    bottom: 121px;
-    width: 610px;
-    height: 395px;
-    border: solid 5px #6D4C3D;
-    background-color: #6d4C3D;
-}
-#dancing-pumpkins{
-    position: absolute;
-    left: 605px;
-    top: 1135px;
-    width: 300px;
-    height: 200px;
-    border: solid 5px #6D4C3D;
-    background-color: #6d4C3D;
-}
-#woodsman {
-    position: absolute;
-    bottom: -608px;
-    left: 911px;
-    width: 400px;
-    height: 600px;
-    border: solid 5px #6D4C3D;
-    padding-bottom: 0.5px;
-    background-color: #6d4c3d;
-}
-#carving-pumpkin{
-    position: absolute;
-    left: 303px;
-    top: 1135px;
-    width: 303px;
-    height: 200px;
-    border: 5px solid rgb(109, 76, 61);
-    background-color: rgb(109, 76, 61);
-}
-#king-text{
-    position: absolute;
-    left: 300px;
-    bottom: 10px;
-    color: #DCC9B6;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(0, 0, 0, 0.637);
-    padding-left: 20px;
-    padding-right: 20px;
-}
 #dancing-block {
-    position: absolute;
-    left: 200px;
-    top: 1px;
-    color: #DCC9B6;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(0, 0, 0, 0.637);
-    padding-left: 20px;
-    padding-right: 20px;
+    position: relative;
+    right: 495px;
+    top: 435px;
+    width: 295px;
+    height: 245px;
 }
-#woodsman-block {
-    position: absolute;
-    color: #DCC9B6;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(0, 0, 0, 0.637);
-    padding-left: 20px;
-    padding-right: 20px;
-}
+
 #carving-block {
-    position: absolute;
-    color: #DCC9B6;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(0, 0, 0, 0.637);
-    padding-left: 20px;
-    padding-right: 20px;
+    position: relative;
+    bottom: 179px;
+    left: 493px;
+    width: 295px;
+    height: 245px;
+    
+
 }
