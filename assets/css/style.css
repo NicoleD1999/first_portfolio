@@ -1,3 +1,4 @@
+/*asigns root variables to chosen colors*/
 :root{
     --stategreen:#023B28;
     --huntergreen: #406450;
@@ -5,9 +6,11 @@
     --palespringlight: #D0D1AC;
     --palespringdark: #DDE0BD;
 }
+/*sets a gradient background for entire visible webpage*/
 body {
     background-image:linear-gradient(var(--palespringlight), var(--palespringdark));
 }
+/*displays texts in any <li> vertically, adjusts font size, underlines text, and adds padding to left and right of all text in <li>*/
 li {
     text-decoration: underline;
     display: inline;
@@ -15,6 +18,7 @@ li {
     padding-right: 8px;
     font-size: larger;
 }
+/*aligns all text in nav bar class to the right of the screen, changes font family, weight, and size, adds background color,padding, a slight margin, and a bottom border to nav bar class*/
 .nav-bar {
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,28 +30,31 @@ li {
     margin: -1%;
     border-bottom: solid 5px var(--ferngreen);
 }
+/*all anchor tags in <nav> will display root variable color instead of default color*/
  nav a{
     color:var(--palespringdark);
 }
+/*any anchor tag in an <h3> will display root variable color instead of default color*/
  h3 a {
      color: var(--ferngreen)
  }
-.text-block {
-
-}
+/*anything in .descript-text class will have a larger font size. Font will change to Arial, Helvetica, sans-serif, and the color of the font will be #023B28*/
 .descript-text {
     font-size: xx-large;
     color: var(--stategreen);  
     font-family: Arial, Helvetica, sans-serif;
 }
+/*assigns a larger font size to anything with a class="side-text"*/
 .side-text {
     font-size: xx-large;
 }
+/*displays anything in class="bottom-text" horizontally rather than vertically, aligns text to center of the screen, and adds margins around all sides of text*/
 .bottom-text {
     display: inline-block;
     text-align: center;
     margin-left: 400px;
 }
+/*all text in id="about-me-text" will have a font size of 30px, will be an Arial, Helvetica, sans-serif font, color of font will be  #406450,adds border to the left of the tex, adds padding between text and border, adds margin between border and edge of screen*/
 #about-me-text {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -56,25 +63,27 @@ li {
     border-left: solid 5px var(--huntergreen);
     margin-left: 160px;
 }
+/*allows inserted image to float to the right of the screen, rounds out image corners, adjusts image size, and adds margin to the right of image, between image and edge of screen*/
 #profile-picture {
     float: right;
     border-radius: 50%;
     width: 250px;
     margin-right: 200px;
 }
+/*displays all images as a flex, flexwraps images and displays them vertically rather than horizontally*/
 #image {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
-
+/*adds border and background color to all images in class="images"*/
 .images {
     position: relative;
     border: solid 5px var(--huntergreen);
     background-color: var(--huntergreen);
 }
-
-#woodsman-block{
+/*changes position of image with id="more-coming-soon-tall"*/
+#more-coming-soon-tall{
     position: relative;
     top: 80px;
     right: 200px;
@@ -82,23 +91,24 @@ li {
     height: 600px;
 
 }
-#king-block {
+/*changes position of image with id="code-refractor"*/
+#code-refractor {
     position: relative;
     left: 115px;
     top: 80px;
     width: 600px;
     height: 350px;
 }
-
-#dancing-block {
+/*changes position of image with id="bottom-left-image"*/
+#bottom-left-image {
     position: relative;
     right: 495px;
     top: 435px;
     width: 295px;
     height: 245px;
 }
-
-#carving-block {
+/*changes position of image with id="bottom-right-image"*/
+#bottom-right-image {
     position: relative;
     bottom: 179px;
     left: 493px;
@@ -106,4 +116,40 @@ li {
     height: 245px;
     
 
+}
+/*defines the layout of webpage if screen width is 768px*/
+@media  screen and (max-width:768px) {
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:  column;
+        width:100%;
+    }
+    .nav-bar {
+        margin-right: -5%;
+    }
+    #king-block {
+        position: relative;
+        left: 39px;
+    }
+    #woodsman-block {
+        position: relative;
+        left: 114px;
+        top: 71px;
+        width: 300px;
+    }
+    #dancing-block {
+        position: relative;
+        left: 118px;
+        top: 74px;
+    }
+    #carving-block {
+        position: relative;
+        left: 118px;
+        bottom: 288px;
+    }
+    .bottom-text {
+        position: relative;
+        right: 200px;
+    }
 }
