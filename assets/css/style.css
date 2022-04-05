@@ -1,4 +1,88 @@
-/*asigns root variables to chosen colors*/
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #3f3e3e;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #4c4e4f;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+.light-dark {
+    align-items: flex-end;
+}
+.dark-mode {
+    margin-top: 5px;
+    margin-right: 10px;;
+}
+.about-me {
+    margin-top: 20px;
+}
+.sections {
+    font-size: 30px;
+    margin-left: 20px;
+}
+.para-about-me {
+    font-size: larger;
+    margin-left: 180px;
+}
+.portfolio-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* asigns root variables to chosen colors
 :root{
     --stategreen:#023B28;
     --huntergreen: #406450;
@@ -7,19 +91,19 @@
     --palespringdark: #DDE0BD;
 }
 /*sets a gradient background for entire visible webpage*/
-body {
+/* body {
     background-image:linear-gradient(var(--palespringlight), var(--palespringdark));
-}
+} */
 /*displays texts in any <li> vertically, adjusts font size, underlines text, and adds padding to left and right of all text in <li>*/
-li {
+/* li {
     text-decoration: underline;
     display: inline;
     padding-left: 8px;
     padding-right: 8px;
     font-size: larger;
-}
+} */
 /*aligns all text in nav bar class to the right of the screen, changes font family, weight, and size, adds background color,padding, a slight margin, and a bottom border to nav bar class*/
-.nav-bar {
+/* .nav-bar {
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
@@ -29,86 +113,86 @@ li {
     padding-right: 15px;
     margin: -1%;
     border-bottom: solid 5px var(--ferngreen);
-}
+} */
 /*all anchor tags in <nav> will display root variable color instead of default color*/
- nav a{
+ /* nav a{
     color:var(--palespringdark);
-}
+} */
 /*any anchor tag in an <h3> will display root variable color instead of default color*/
- h3 a {
+ /* h3 a {
      color: var(--ferngreen)
- }
+ } */
 /*anything in .descript-text class will have a larger font size. Font will change to Arial, Helvetica, sans-serif, and the color of the font will be #023B28*/
-.descript-text {
+/* .descript-text {
     font-size: xx-large;
     color: var(--stategreen);  
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 /*assigns a larger font size to anything with a class="side-text"*/
-.side-text {
+/* .side-text {
     font-size: xx-large;
-}
+} */
 /*displays anything in class="bottom-text" horizontally rather than vertically, aligns text to center of the screen, and adds margins around all sides of text*/
-.bottom-text {
+/* .bottom-text {
     display: inline-block;
     text-align: center;
     margin-left: 400px;
-}
+} */
 /*all text in id="about-me-text" will have a font size of 30px, will be an Arial, Helvetica, sans-serif font, color of font will be  #406450,adds border to the left of the tex, adds padding between text and border, adds margin between border and edge of screen*/
-#about-me-text {
+/* #about-me-text {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--huntergreen);
     padding-left: 30px;
     border-left: solid 5px var(--huntergreen);
     margin-left: 160px;
-}
+} */
 /*allows inserted image to float to the right of the screen, rounds out image corners, adjusts image size, and adds margin to the right of image, between image and edge of screen*/
-#profile-picture {
+/* #profile-picture {
     float: right;
     border-radius: 50%;
     width: 250px;
     margin-right: 200px;
-}
+} */
 /*displays all images as a flex, flexwraps images and displays them vertically rather than horizontally*/
-#image {
+/* #image {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-}
+} */
 /*adds border and background color to all images in class="images"*/
-.images {
+/* .images {
     position: relative;
     border: solid 5px var(--huntergreen);
     background-color: var(--huntergreen);
-}
+} */
 /*changes position of image with id="more-coming-soon-tall"*/
-#more-coming-soon-tall{
+/* #more-coming-soon-tall{
     position: relative;
     top: 80px;
     right: 200px;
     width: 350px;
     height: 600px;
 
-}
+} */
 /*changes position of image with id="code-refractor"*/
-#code-refractor {
+/* #code-refractor {
     position: relative;
     left: 115px;
     top: 80px;
     width: 600px;
     height: 350px;
-}
+} */
 /*changes position of image with id="bottom-left-image"*/
-#bottom-left-image {
+/* #bottom-left-image {
     position: relative;
     right: 495px;
     top: 435px;
     width: 295px;
     height: 245px;
-}
+} */
 /*changes position of image with id="bottom-right-image"*/
-#bottom-right-image {
+/* #bottom-right-image {
     position: relative;
     bottom: 179px;
     left: 493px;
@@ -116,9 +200,9 @@ li {
     height: 245px;
     
 
-}
+} */
 /*defines the layout of webpage if screen width is 768px*/
-@media  screen and (max-width:768px) {
+/* @media  screen and (max-width:768px) {
     body{
         display: flex;
         flex-wrap: wrap;
@@ -152,4 +236,4 @@ li {
         position: relative;
         right: 200px;
     }
-}
+} */
