@@ -217,7 +217,6 @@ body {
     right: 200px;
     width: 350px;
     height: 600px;
-
 } */
 /*changes position of image with id="code-refractor"*/
 /* #code-refractor {
@@ -243,7 +242,6 @@ body {
     width: 295px;
     height: 245px;
     
-
 } */
 /*defines the layout of webpage if screen width is 768px*/
 /* @media  screen and (max-width:768px) {
