@@ -1,4 +1,7 @@
 /* The switch - the box around the slider */
+body {
+    background-color: #9c8888;
+}
 .switch {
     position: relative;
     display: inline-block;
@@ -37,7 +40,7 @@
   }
   
   input:checked + .slider {
-    background-color: #3f3e3e;
+    background-color: #1f1f1f;
   }
   
   input:focus + .slider {
@@ -50,7 +53,6 @@
     transform: translateX(20px);
   }
   
-  /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }
@@ -69,19 +71,61 @@
     margin-top: 20px;
 }
 .sections {
-    font-size: 30px;
+    font-size: 50px;
     margin-left: 20px;
+    font-family: 'Unna', serif;
 }
 .para-about-me {
-    font-size: larger;
+    font-size: 25px;
     margin-left: 180px;
+    font-family: 'Forum', cursive;
 }
 .portfolio-image{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    position: relative;
+    top: 80px;
+}
+#carouselText {
+    background-color: #796565;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#carouselHead {
+    font-family: 'Unna', serif;
+    font-size: 20px;
+}
+#carouselBody {
+    font-size: 16px;
+    font-family: 'Forum', cursive; 
+}
+.contactLinks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.contactImg {
+    width: 45px;
+    height: 45px;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
+.contactMe {
+    color: #212121;
+}
+.contactMe:hover {
+    color: #595858;
+}
+
+.darkMode {
+    background-color: #3a3d42;
+    color: rgb(233, 233, 233);
+  }
+.contactMeDark {
+    color: rgb(233, 233, 233);
+}
 /* asigns root variables to chosen colors
 :root{
     --stategreen:#023B28;
