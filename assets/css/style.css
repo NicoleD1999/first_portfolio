@@ -153,6 +153,15 @@ body {
     top: -15px;
     right: 40px;
   }
+  #carouselText {
+    padding: 2px;
+  }
+  #carouselHead {
+    font-size: 10px;
+  }
+  #carouselBody {
+    font-size: 5px;
+  }
 }
 @media screen and (min-width: 768) and (max-width: 1023px) {
   .para-about-me {
