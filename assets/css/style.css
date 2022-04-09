@@ -78,7 +78,8 @@ body {
 .para-about-me {
     font-size: 25px;
     margin-left: 180px;
-    font-family: 'Forum', cursive;
+    font-family: 'Anek Tamil', sans-serif;
+
 }
 .portfolio-image{
     width: 200px;
@@ -97,11 +98,19 @@ body {
 }
 #carouselHead {
     font-family: 'Unna', serif;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
 }
 #carouselBody {
-    font-size: 16px;
-    font-family: 'Forum', cursive; 
+    font-size: 18px;
+    font-family: 'Anek Tamil', sans-serif;
+
+}
+#here {
+  color: #1f1f1f;
+}
+#here:hover {
+  color: black;
 }
 .contactLinks {
     text-align: center;
@@ -116,10 +125,12 @@ body {
 }
 
 .contactMe {
-    color: #212121;
+    color: #e7e7e7;
+    font-size: 15px;
+    font-weight: bold;
 }
 .contactMe:hover {
-    color: #595858;
+    color: #000000;
 }
 
 .darkMode {
@@ -128,4 +139,40 @@ body {
   }
 .contactMeDark {
     color: rgb(233, 233, 233);
+}
+
+@media screen and (max-width: 412px) {
+  .para-about-me {
+    margin-left: 9px;
+    font-size: 15px;
+  }
+  .portfolio-image {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -15px;
+    right: 60px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .para-about-me {
+    margin-left: 9px;
+    font-size: 15px;
+  }
+  .portfolio-image {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -15px;
+    right: 20px;
+  }
+  #contactLocations {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .para-about-me {
+    font-size: 40px;
+  }
+  
 }
