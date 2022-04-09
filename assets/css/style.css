@@ -141,7 +141,7 @@ body {
     color: rgb(233, 233, 233);
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 767px) {
   .para-about-me {
     margin-left: 9px;
     font-size: 15px;
@@ -151,28 +151,12 @@ body {
     height: 80px;
     position: relative;
     top: -15px;
-    right: 60px;
+    right: 40px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 768) and (max-width: 1023px) {
   .para-about-me {
-    margin-left: 9px;
-    font-size: 15px;
-  }
-  .portfolio-image {
-    width: 80px;
-    height: 80px;
-    position: relative;
-    top: -15px;
-    right: 20px;
-  }
-  #contactLocations {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .para-about-me {
-    font-size: 40px;
+    font-size: 10px;
   }
   
 }
