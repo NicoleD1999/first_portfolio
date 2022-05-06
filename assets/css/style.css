@@ -93,6 +93,22 @@ body {
     position: relative;
     top: 80px;
 }
+.services {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Unna', serif;
+  margin-top: 10px;
+}
+.service-header {
+  font-size: 30px;
+}
+.service-cards {
+  margin: 10px;
+}
+.service-body {
+  font-size: 20px;;
+  font-family: 'Anek Tamil', sans-serif;
+}
 #carouselText {
     background-color: #796565;
     padding-left: 10px;
