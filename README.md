@@ -16,7 +16,7 @@ Technology Used -
 
 ![alt](./assets/images/Portfolio-ss-2.png)
 
-Click [here](https://nicoled1999.github.io/portfolio/) to view my website.
+Click [here](https://nicoled1999.github.io/temporary_portfolio/) to view my website.
 
 ![](https://img.shields.io/badge/License-MIT-blueviolet)
 
